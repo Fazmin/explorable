@@ -1,0 +1,160 @@
+/* Design tokens. Light is the default; dark is a selected palette, not an inversion.
+   Mode instruments: Learn uses a highlighter, Teach uses chalk. */
+
+:root {
+  color-scheme: light;
+
+  --canvas: #f5f6f8;
+  --surface: #ffffff;
+  --surface-2: #f1f3f7;
+  --surface-3: #e7eaf0;
+  --ink: #18213a;
+  --ink-2: #5b6478;
+  --ink-3: #8a92a3;
+  --rule: #dde2ea;
+  --rule-strong: #c7cedb;
+
+  --accent: #2d4fd6;
+  --accent-hover: #2342c0;
+  --accent-ink: #ffffff;
+  --accent-soft: #e7ecfc;
+  --accent-text: #2342c0;
+
+  --success: #2f7d4f;
+  --success-soft: #e5f3ea;
+  --warning: #9a6a08;
+  --warning-soft: #fbf1d9;
+  --danger: #b4232f;
+  --danger-soft: #fbe9ea;
+
+  /* Mode instrument colors */
+  --highlighter: rgba(242, 220, 61, 0.62);
+  --highlighter-ink: #7a6000;
+  --chalk: rgba(47, 107, 87, 0.22);
+  --chalk-ink: #2f6b57;
+
+  /* Charts (validated with the dataviz palette checks) */
+  --series-1: #2d4fd6;
+  --series-2: #eb6834;
+  --chart-grid: #e7eaf0;
+  /* Categorical slots in fixed order (dataviz reference palette) */
+  --cat-1: #2a78d6; --cat-2: #eb6834; --cat-3: #1baf7a; --cat-4: #eda100;
+  --cat-5: #e87ba4; --cat-6: #008300; --cat-7: #4a3aa7; --cat-8: #e34948;
+
+  --font-ui: "Atkinson Hyperlegible Next Variable", "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-read: "Literata Variable", "Literata", Georgia, "Times New Roman", serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+
+  --text-xs: 12.5px;
+  --text-sm: 13.5px;
+  --text-base: 15px;
+  --text-md: 17px;
+  --text-lg: 20px;
+  --text-xl: 25px;
+  --text-2xl: 32px;
+
+  --radius-control: 6px;
+  --radius-figure: 10px;
+  --radius-panel: 14px;
+  --radius-composer: 16px;
+
+  --shadow-float: 0 1px 2px rgba(24, 33, 58, 0.06), 0 8px 24px rgba(24, 33, 58, 0.08);
+  --shadow-dialog: 0 24px 64px rgba(16, 20, 28, 0.24);
+
+  --sidebar-width: 268px;
+  --measure: 720px;
+  --figure-width: 900px;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --canvas: #10141c;
+  --surface: #171c27;
+  --surface-2: #1f2533;
+  --surface-3: #283043;
+  --ink: #e7eaf0;
+  --ink-2: #9ba4b6;
+  --ink-3: #6d7689;
+  --rule: #2a3142;
+  --rule-strong: #3a4357;
+
+  --accent: #8fa6ff;
+  --accent-hover: #a6b8ff;
+  --accent-ink: #0e1430;
+  --accent-soft: #232b4a;
+  --accent-text: #a6b8ff;
+
+  --success: #6cc79a;
+  --success-soft: #15291f;
+  --warning: #e3b654;
+  --warning-soft: #2e2512;
+  --danger: #f2858d;
+  --danger-soft: #33171b;
+
+  --highlighter: rgba(233, 214, 74, 0.26);
+  --highlighter-ink: #ecd96a;
+  --chalk: rgba(111, 195, 162, 0.2);
+  --chalk-ink: #7fd1b0;
+
+  --series-1: #6f86f2;
+  --series-2: #d95926;
+  --chart-grid: #262d3d;
+  --cat-1: #3987e5; --cat-2: #d95926; --cat-3: #199e70; --cat-4: #c98500;
+  --cat-5: #d55181; --cat-6: #008300; --cat-7: #9085e9; --cat-8: #e66767;
+
+  --shadow-float: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-dialog: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
+/* The active mode chooses the instrument. */
+[data-mode="learn"] {
+  --marker: var(--highlighter);
+  --marker-ink: var(--highlighter-ink);
+}
+[data-mode="teach"] {
+  --marker: var(--chalk);
+  --marker-ink: var(--chalk-ink);
+}
+
+/* ---- Accessibility --------------------------------------------------- */
+
+/* Increase contrast: darker secondary text, firmer rules, stronger marks. */
+:root:not([data-theme="dark"])[data-contrast="more"] {
+  --ink: #0d1428;
+  --ink-2: #2f384c;
+  --ink-3: #4b5466;
+  --rule: #9ea7b6;
+  --rule-strong: #5f6879;
+  --surface-2: #e9ecf2;
+  --surface-3: #dde2ea;
+  --accent: #1d38b8;
+  --accent-hover: #172e9a;
+  --accent-text: #1a32a6;
+  --highlighter: rgba(242, 220, 61, 0.9);
+  --highlighter-ink: #5c4800;
+  --chalk: rgba(47, 107, 87, 0.34);
+  --chalk-ink: #1f5242;
+}
+:root[data-theme="dark"][data-contrast="more"] {
+  --canvas: #090c12;
+  --surface: #10141d;
+  --surface-2: #1b2130;
+  --ink: #ffffff;
+  --ink-2: #d7dce6;
+  --ink-3: #b0b8c8;
+  --rule: #4e576c;
+  --rule-strong: #8c95a8;
+  --accent: #b6c4ff;
+  --accent-hover: #cdd7ff;
+  --accent-text: #cbd5ff;
+  --highlighter: rgba(233, 214, 74, 0.5);
+  --highlighter-ink: #fff18a;
+  --chalk: rgba(111, 195, 162, 0.42);
+  --chalk-ink: #a6ecd0;
+}
+:root[data-contrast="more"] :focus-visible { outline-width: 3px; }
+
+/* Reading font */
+:root[data-font="serif"] { --font-ui: var(--font-read); }
+:root[data-font="system"] { --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }

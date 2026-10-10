@@ -1,0 +1,20 @@
+{
+ "learn": [
+  "Visualize how a Fourier series builds a square wave from sine waves. Let me change the number of harmonics and compare square, sawtooth, and triangle waves, and explain the overshoot near the jumps.",
+  "Show me the central limit theorem with a simulation: let me pick a population shape and sample size, draw many samples, and compare the histogram of sample means with the normal curve the theorem predicts.",
+  "Quiz me on cellular respiration with five mixed questions at an intro biology level, including one that makes me reason about an experiment.",
+  "Make flashcards for the main organic chemistry functional groups: structure, an example compound, and one key property each.",
+  "Solve the integral of x·e^x step by step using integration by parts. Let me try each step before seeing it, and give me a similar practice problem.",
+  "Compare evidence-based study strategies in a table: what each involves, how well the research supports it, and how I could try it this week.",
+  "What can you do?"
+ ],
+ "teach": [
+  "Plan a 50-minute lesson introducing Bayesian inference to upper-level undergraduates, built around the base-rate fallacy, with active learning and an exit ticket.",
+  "Create a rubric for an 8–10 page argumentative research paper with four performance levels and weighted criteria.",
+  "Write an assessment quiz on cellular respiration for an intro biology course: five mixed item types tagged with Bloom levels, with an answer key and explanations.",
+  "Make flashcards my students can use to review the main organic chemistry functional groups.",
+  "Build a classroom demo simulation of the central limit theorem that I can project: large readable controls for population shape and sample size, and buttons to draw 1, 100, or 1,000 samples.",
+  "Build an interactive classroom demo that visualizes a Fourier series building a square wave, with a harmonics slider I can operate live.",
+  "What can you do?"
+ ]
+}

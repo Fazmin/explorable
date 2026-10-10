@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorable</title>
+    <script>
+      // Apply the saved theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem("edu.theme") || "system";
+        var dark = t === "dark" || (t === "system" && matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      } catch (e) {
+        document.documentElement.dataset.theme = "light";
+      }
+      // Accessibility preferences, so the first paint already respects them.
+      try {
+        var a = JSON.parse(localStorage.getItem("edu.a11y") || "{}");
+        var d = document.documentElement.dataset;
+        d.contrast = a.highContrast ? "more" : "normal";
+        d.reduceMotion = a.reduceMotion ? "true" : "false";
+        d.spacing = a.relaxedSpacing ? "relaxed" : "normal";
+        d.font = a.readingFont === "serif" || a.readingFont === "system" ? a.readingFont : "hyperlegible";
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
