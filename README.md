@@ -16,8 +16,6 @@ Explorable gives *answers you can interact with* for university courses. For eac
 - **Accessibility:** text size up to 150%, increased contrast, reduced motion, relaxed (dyslexia-friendly) spacing, a choice of reading font, and read-aloud for answers, including spoken math. Every setting also applies inside generated interactives.
 - **Light and dark themes**, switched with one button in the sidebar ("Match system" is in Settings). Generated interactives follow the theme as well.
 
-The plan written before the build is in [docs/PLAN.md](docs/PLAN.md).
-
 ## Screenshots
 
 These come from demo mode, which replays scripted answers.
