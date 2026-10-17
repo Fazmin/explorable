@@ -20,6 +20,15 @@ Explorable gives *answers you can interact with* for university courses. For eac
 
 These come from demo mode, which replays scripted answers.
 
+### Two modes
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><img src="docs/images/learn-welcome.png" alt="The Learn mode start screen for a Thermodynamics course, with starter prompts grouped under Understand, Practice, and Work through"><br><b>Learn mode</b> starts with a question box and starter prompts. With a course selected, answers are pitched at its level and can draw on its materials.</td>
+    <td width="50%" valign="top"><img src="docs/images/teach-welcome.png" alt="The Teach mode start screen with starter prompts grouped under Plan, Assess, and Demonstrate"><br><b>Teach mode</b> starts from what an instructor needs: a plan, an assessment, or a demo to project in class.</td>
+  </tr>
+</table>
+
 ### Learn
 
 <table>
@@ -47,6 +56,18 @@ These come from demo mode, which replays scripted answers.
   <tr>
     <td width="50%" valign="top"><img src="docs/images/teach-present.png" alt="A central limit theorem simulation in full-screen Present view after drawing 1,000 samples"><br><b>Present view</b> shows a demo full screen for the projector, and it stays interactive.</td>
     <td width="50%" valign="top"><img src="docs/images/course-materials.png" alt="Course materials for a thermodynamics course, with a test search that finds a passage about Carnot efficiency"><br><b>Course materials</b> are searched and cited by the assistant. You can test a search yourself.</td>
+  </tr>
+  <tr>
+    <td colspan="2" valign="top"><img src="docs/images/teach-library.png" alt="The Library with a saved lesson plan open beside the list of saved items, showing objectives tagged by Bloom level and a color-coded session outline"><br><b>The Library</b> keeps everything you save. Search it, filter by type, or show items from every course.</td>
+  </tr>
+</table>
+
+### Dark theme
+
+<table>
+  <tr>
+    <td width="50%" valign="top"><img src="docs/images/learn-quiz-dark.png" alt="Graded quiz results in the dark theme, with the correct answer outlined in green, the chosen wrong answer in red, an explanation under each, and a score of 4 of 5"><br><b>Quiz results</b> in the dark theme: the right answer in green, a wrong pick in red, a score, and a button to discuss the results with the assistant.</td>
+    <td width="50%" valign="top"><img src="docs/images/learn-progress-dark.png" alt="The Progress page in the dark theme, with a day streak, cards due, quizzes taken, a 30-day activity chart, and quiz accuracy by topic"><br><b>Progress</b> in the dark theme, with the activity chart and accuracy by topic.</td>
   </tr>
 </table>
 
